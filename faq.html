@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - 语奥软件市场</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/common.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>语奥软件市场</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">首页</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="contact.html">联系我们</a>
+                    <a href="faq.html">常见问题</a>
+                    <a href="install-uninstall.html">安装与卸载</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <div class="section-title">
+                <h1>常见问题</h1>
+                <p>以下是用户最常遇到的问题及解答</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-category">
+                    <h2>下载与安装</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span>如何下载语奥软件市场？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以通过以下步骤下载语奥软件市场：</p>
+                            <ol>
+                                <li>访问我们的官方网站</li>
+                                <li>在首页点击"立即下载"按钮</li>
+                                <li>选择适合您系统的版本（Windows 10/11版）</li>
+                                <li>等待下载完成</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span>安装过程中出现错误怎么办？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>如果安装过程中出现错误，您可以尝试以下解决方案：</p>
+                            <ul>
+                                <li>确保您的系统满足最低要求</li>
+                                <li>关闭杀毒软件后重试安装</li>
+                                <li>检查下载的文件是否完整（可通过SHA256校验）</li>
+                                <li>以管理员身份运行安装程序</li>
+                                <li>如果问题仍然存在，请联系我们的客服支持</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span>下载速度很慢怎么办？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>下载速度受多种因素影响，您可以尝试以下方法提高下载速度：</p>
+                            <ul>
+                                <li>检查您的网络连接是否正常</li>
+                                <li>尝试更换下载时间段</li>
+                                <li>使用下载工具如迅雷等</li>
+                                <li>联系我们获取镜像下载地址</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h2>使用问题</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span>如何搜索和安装软件？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>在语奥软件市场中搜索和安装软件非常简单：</p>
+                            <ol>
+                                <li>打开语奥软件市场</li>
+                                <li>在搜索框中输入您需要的软件名称</li>
+                                <li>从搜索结果中选择合适的软件</li>
+                                <li>点击"安装"按钮</li>
+                                <li>等待下载和安装完成</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <h2>安全与隐私</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span>如何确保下载的软件安全？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>语奥软件市场对所有上架的软件都进行严格的安全检测：</p>
+                            <ul>
+                                <li>病毒扫描：使用多款杀毒引擎进行检测</li>
+                                <li>行为分析：监控软件的安装和运行行为</li>
+                                <li>来源验证：确保软件来自官方或可信来源</li>
+                                <li>用户反馈：及时处理用户报告的问题软件</li>
+                            </ul>
+                            <p>尽管如此，我们仍建议您在安装新软件前创建系统还原点。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span>语奥软件市场会收集我的个人信息吗？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>语奥软件市场非常重视用户隐私：</p>
+                            <ul>
+                                <li>所有数据收集行为都会在隐私政策中明确说明</li>
+                                <li>我们不会收集、出售或共享您的个人信息给第三方</li>
+                            </ul>
+                            <p>更多信息请参阅我们的<a href="privacy.html">隐私政策</a>。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>语奥软件市场</h3>
+                    <p>专业的PC软件管理工具，为您提供安全、便捷的软件下载与管理体验。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>帮助中心</h3>
+                    <ul class="footer-links">
+                        <li><a href="install-uninstall.html">安装与卸载</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>条款协议</h3>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">条款协议</a></li>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 天津语奥科技有限公司 版权所有 | <a href="https://beian.miit.gov.cn/" target="_blank">津ICP备2024022931号-1</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(question) {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('i');
+            
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                answer.classList.add('show');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+    </script>
+</body>
+</html>
