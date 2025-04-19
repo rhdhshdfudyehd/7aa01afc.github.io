@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>语奥软件市场 - 专业PC软件管理工具</title>
 	<link rel="shortcut icon" href="static/image/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link rel="stylesheet" href="static/css/common.css">
+	<link rel="stylesheet" href="static/css/fontawesome.min.css">
+	<link rel="stylesheet" href="static/css/common.css?v=1.5.3">
 </head>
 <body>
     <header>
@@ -92,43 +92,41 @@
     </section>
 
 	<section class="software-showcase" id="download">
-		<div class="container">
-			<div class="showcase-container">
-				<div class="screenshot-container">
-					<div class="screenshot-img">
-						<img src="static/image/main-ui.png" alt="语奥软件市场主界面">
-					</div>
-				</div>
-
-				<div class="download-container">
-					<h2>下载语奥软件市场</h2>
-					<div class="download-info">
-						<div class="download-info-item">
-							<span>版本</span>
-							<span>v1.5.2</span>
-						</div>
-						<div class="download-info-item">
-							<span>大小</span>
-							<span>88.5 MB</span>
-						</div>
-						<div class="download-info-item">
-							<span>发布日期</span>
-							<span>2025-04-14</span>
-						</div>
-						<div class="download-info-item">
-							<span>系统要求</span>
-							<span>Windows All</span>
-						</div>
-					</div>
-
-					<div class="download-hash">
-						SHA256: e29db8d1be6eeb79a3f9ed3ca03b603842cf641c5ff294e7c7ef6adabb58d226
-					</div>
-
-					<a href="/download/setup.exe" class="btn btn-primary"><i class="fas fa-download"></i> 下载安装包</a>
-				</div>
-			</div>
-		</div>
+	    <div class="container">
+	        <div class="showcase-container">
+	            <div class="screenshot-container">
+	                <div class="screenshot-img">
+	                    <img src="static/image/main-ui.png" alt="语奥软件市场主界面">
+	                </div>
+	            </div>
+	
+	            <div class="download-container">
+	                <h2>下载语奥软件市场</h2>
+	                <div class="download-info">
+	                    <div class="download-info-item">
+	                        <span>版本</span>
+	                        <span>v1.5.3</span>
+	                    </div>
+	                    <div class="download-info-item">
+	                        <span>发布日期</span>
+	                        <span>2025-04-19</span>
+	                    </div>
+	                    <div class="download-info-item">
+	                        <span>系统要求</span>
+	                        <span>Windows 7 及以上版本</span>
+	                    </div>
+	                </div>
+	
+	                <div class="download-hash">
+	                    点击"下载安装"按钮，即表示您同意下载并在您的计算机上安装语奥软件市场。
+	                </div>
+	
+	                <a href="/download/语奥软件市场-x64.exe" class="btn btn-primary download-btn" data-32bit="/download/语奥软件市场-ia32.exe">
+	                    <i class="fas fa-download"></i> 下载安装
+	                </a>
+	            </div>
+	        </div>
+	    </div>
 	</section>
 
     <footer>
@@ -165,5 +163,15 @@
             </div>
         </div>
     </footer>
+	
+	<script type="text/javascript">
+	    var is64bit = navigator.userAgent.indexOf('WOW64') !== -1 || navigator.userAgent.indexOf('Win64') !== -1;
+	    if (!is64bit) {
+	        var downloadBtn = document.querySelector('.download-btn');
+	        if (downloadBtn) {
+	            downloadBtn.href = downloadBtn.getAttribute('data-32bit');
+	        }
+	    }
+	</script>
 </body>
 </html>
