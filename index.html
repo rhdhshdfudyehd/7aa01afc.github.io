@@ -6,7 +6,7 @@
     <title>语奥软件市场 - 专业PC软件管理工具</title>
 	<link rel="shortcut icon" href="static/image/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="static/css/fontawesome.min.css">
-	<link rel="stylesheet" href="static/css/common.css?v=1.5.3">
+	<link rel="stylesheet" href="static/css/common.css?v=1.5.4">
 </head>
 <body>
     <header>
@@ -105,11 +105,11 @@
 	                <div class="download-info">
 	                    <div class="download-info-item">
 	                        <span>版本</span>
-	                        <span>v1.5.3</span>
+	                        <span>v1.5.4</span>
 	                    </div>
 	                    <div class="download-info-item">
 	                        <span>发布日期</span>
-	                        <span>2025-04-19</span>
+	                        <span>2025-04-21</span>
 	                    </div>
 	                    <div class="download-info-item">
 	                        <span>系统要求</span>
@@ -117,13 +117,10 @@
 	                    </div>
 	                </div>
 	
-	                <div class="download-hash">
-	                    点击"下载安装"按钮，即表示您同意下载并在您的计算机上安装语奥软件市场。
-	                </div>
-	
-	                <a href="/download/语奥软件市场-x64.exe" class="btn btn-primary download-btn" data-32bit="/download/语奥软件市场-ia32.exe">
+	                <div class="download-hash">点击"下载安装"按钮，即表示您同意下载并在您的计算机上安装语奥软件市场。</div>
+	                <button class="btn btn-primary download-btn">
 	                    <i class="fas fa-download"></i> 下载安装
-	                </a>
+	                </button>
 	            </div>
 	        </div>
 	    </div>
@@ -164,14 +161,9 @@
         </div>
     </footer>
 	
-	<script type="text/javascript">
-	    var is64bit = navigator.userAgent.indexOf('WOW64') !== -1 || navigator.userAgent.indexOf('Win64') !== -1;
-	    if (!is64bit) {
-	        var downloadBtn = document.querySelector('.download-btn');
-	        if (downloadBtn) {
-	            downloadBtn.href = downloadBtn.getAttribute('data-32bit');
-	        }
-	    }
-	</script>
+	<script type="text/javascript">YUAO_VERSION = '1.5.4';</script>
+	<script type="text/javascript" src="static/js/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="static/js/crypto-js.min.js"></script>
+	<script type="text/javascript" src="static/js/common.js?v=1.5.4"></script>
 </body>
 </html>
